@@ -1,0 +1,39 @@
+Caeli Massey
+
+--- NOTES/HONOR CODE ---
+
+I used my fourth and final extension on this homework.
+
+I affirm I have adhered to the Honor Code on this assignment. - Caeli Massey
+
+
+--- PROGRAMS ---
+
+list_tree.c -- contains funtions used to make and alter dtnode structures
+	       (dtnodes can function as linked list AND binary tree nodes)
+
+encode.c -- encode will read in a text file, encode its contents using huffman compression,
+	    and print the encoded version to output.
+
+decode.c -- decode will essentially undo files encoded by encode (it returns the original, uncoded version)
+
+
+--- BUGS ---
+No known Valgrind/memory allocation errors.
+
+I was having segmentation faults on any large text files (pretty unfortunate, since those are the most
+convenient to compress!!). It seemed to be happening in my getCodes() function. I increased the max length
+of the code strings and this seemed to fix it for my text input, but I'm still confused on why it needed to
+be bigger. It was originally 9 (i.e. codes could be up to 8 bits), and I don't see how a Huffman code could
+exceed that and still be helpful since the original char is only 8 bits.
+
+Anyway, I THINK I fixed it, but it may still be a problem, and I would love input on why it happened in the
+first place if I'm missing something.
+
+--- TIME SPENT ---
+I honestly forgot to keep track of how much time this took me again, but it was a pretty long time. I'd say
+6-7 hours minimum, including writing README's/man pages, etc. This was tricky!! (A neat assignment, though!)
+
+
+--- FAREWELLS ---
+Happy Holidays to whoever's grading this, and I hope you have a wonderful Winter break!!! :)
