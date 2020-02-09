@@ -24,7 +24,7 @@ int main(int argc, char * argv[]){
     in = freopen(argv[1], "r", stdin);
     if(in == NULL){
       fprintf(stderr, "Input file \"%s\" does not exist.\n", argv[1]);
-      exit(1);// Check number??
+      exit(1);
     }
     
     out = freopen(argv[2], "w", stdout);
@@ -35,7 +35,7 @@ int main(int argc, char * argv[]){
     
     if(in == NULL){
       fprintf(stderr, "Input file \"%s\" does not exist.\n", argv[1]);
-      exit(1);// Check number??
+      exit(1);
     }
   } else { // Use stdin and stdout (should be redirected for dependable results)
     ;
